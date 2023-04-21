@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #e5e7eb;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    display: flex;
+    height: 200px;
+    min-width: fit-content;
+    max-width:100%;
+    background-color: #818cf8;
+    justify-content: center;
+    align-items: center;
+}
+.head span {
+    font-size: 75px;
+    color: white;
+}
+.form-submit {
+    align-self: center;
+}
+.form-submit label{
+    margin-top: 35px;
+    padding: 10px;
+    background-color: #34d399;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    padding: 30px;
+}
+#txt{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+#txt div{
+    padding-left: 20px;
+}
+#btn{
+    display: flex;
+    padding: 30px;  
+    justify-content: space-around;
+}
+#btn div{
+    margin-left: 50px;
+}
+#submit{
+    width: 0;
+    border:#e5e7eb;
+    height: 0;
+}
+#name input{
+    height: 20px;
+    width: 250px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-color: rgb(17, 114, 226);
+}
+#writer input{
+    height: 20px;
+    width: 250px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-color: rgb(17, 114, 226);
+}
+#pgs input{
+    height: 20px;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-color: rgb(17, 114, 226);
+}
+.book-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 300px));
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    border-radius: 3%;
+    display: grid;
+    padding: 10px;
+    grid-template-rows: repeat(3, 1fr);
+}
+.card span{
+    background-color: burlywood;
+}
+#btn label{
+    font-size: 25px;
+}
+.card button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 20px;
+    margin-top: 10px;
+    padding: 6px;
+    background-color: blanchedalmond;
+}

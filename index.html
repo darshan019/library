@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <span style="background-color: #818cf8;">Library</span>
+        </div>
+        <form id="form" method="post">
+            <div id="txt">
+                <div id="name">
+                    <label for="book-name">Name of the Book</label>
+                    <input type="text" id="book-name" required>
+                </div>
+                <div id="writer">
+                    <label for="author">Author of the Book</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div id="pgs">
+                    <label for="pages">No. of pages</label>
+                    <input type="number" name="pgs" id="pages" required>
+                </div>
+            </div>
+            <div>
+            <div id="btn">
+                <div class="check">
+                    <label for="checkbox">Read</label>
+                    <input type="checkbox" name="read?" id="checkbox" style="margin-left: 6px; width: 15px; height: 15px;">
+                </div>
+            
+                <div class="form-submit">
+                    <label for="submit">Submit</label>
+                    <input type="button" name="submit" id="submit">
+                </div>
+            </div>
+        </form> 
+        <div class="book-cards"></div>
+    </div>
+</body>
+</html>
