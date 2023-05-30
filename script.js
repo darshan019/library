@@ -25,15 +25,7 @@ function addBookToLibrary(event) {
     const bookAdd = new Book(book_name, book_author, book_pages, readCheck)
     myLibrary.push(bookAdd)
 
-    for(let i = 0; i < myLibrary.length; i++) {
-        if(i === myLibrary.length - 1) {
-            bookDisplay(myLibrary[myLibrary.length-1])
-        }
-        else{
-            continue
-        }
-        
-    }
+    bookDisplay(myLibrary[myLibrary.length-1])
 }
 
 function bookDisplay(item){
