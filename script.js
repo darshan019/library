@@ -15,6 +15,15 @@ function addBookToLibrary(event) {
     let book_pages = document.getElementById('pages').value
     let readCheck;
 
+    const inputs = document.getElementById('txt').getElementsByTagName('input')
+
+    for(let i = 0; i < inputs.length; i++){
+        if(inputs[i].value === ''){
+            alert(`Enter the value of ${inputs[i].id}`)
+            return
+        }
+    }
+
     if(document.getElementById('checkbox').checked === true){
         readCheck = 'Yes'
     }
@@ -25,15 +34,7 @@ function addBookToLibrary(event) {
     const bookAdd = new Book(book_name, book_author, book_pages, readCheck)
     myLibrary.push(bookAdd)
 
-    for(let i = 0; i < myLibrary.length; i++) {
-        if(i === myLibrary.length - 1) {
-            bookDisplay(myLibrary[myLibrary.length-1])
-        }
-        else{
-            continue
-        }
-        
-    }
+    bookDisplay(myLibrary[myLibrary.length-1])
 }
 
 function bookDisplay(item){
